@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* playfairdisplay font */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* nunito font */
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* comfortaa font */
+.font-comfortaa {
+  font-family: 'Comfortaa', sans-serif;
+}
