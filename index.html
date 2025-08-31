@@ -3,8 +3,14 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    
+    <!--Tailwind CSS-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!--Local CSS-->
     <link rel="stylesheet" href="style.css">
+    
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -145,18 +151,28 @@
       <div class="absolute inset-0 bg-[#F9FAFF]"></div>
       <div class="mx-auto max-w-6xl px-4">
         <div class="relative z-10 py-3">
-          <div class=" grid grid-cols-[auto-1fr] gap-2 justify-items-center mb-5 ">
-            <div class="pb-15 flex">
-              <h1 class="underline decoration-4 underline-offset-14 decoration-[#FDC435] font-playfair font-bold text-4xl">contact</h1>
-            </div>
-            <p class="font-nunito text-gray-600">name</p>
-            <input type="text" class="bg-white border border-[#FDC435] rounded-2xl px-2 py-1 focus:outline-none max-w-92 text-black shadow-lg">
-            <p class="font-nunito text-gray-600">e-mail</p>
-            <input type="email" class="bg-white border border-[#FDC435] rounded-2xl px-2 py-1 focus:outline-none max-w-92 text-black shadow-lg">
-            <p class="font-nunito text-gray-600">message</p>
-            <textarea class="bg-white max-w-108 h-40 text-left align-top p-2 border border-[#FDC435] rounded-2xl resize-none focus:outline-none shadow-lg"></textarea>
-            <a href="#" class="w-28 mt-5 bg-[#FDC435] text-center self-center mb-4 font-bold text-black px-4 py-2 rounded-2xl transition-colors hover:bg-gray-200">submit</a>
-          </div>
+          
+            <!--formspree integration-->
+            <form action="https://formspree.io/f/xwpnbvkn" method="POST">
+
+              <div class=" grid grid-cols-[auto-1fr] gap-2 justify-items-center mb-5 ">
+                <div class="pb-15 flex">
+                  <h1 class="underline decoration-4 underline-offset-14 decoration-[#FDC435] font-playfair font-bold text-4xl">contact</h1>
+                </div>
+                <p class="font-nunito text-gray-600">name</p>
+                <input type="text" name="name" class="bg-white border border-[#FDC435] rounded-2xl px-2 py-1 focus:outline-none max-w-92 text-black shadow-lg">
+                <p class="font-nunito text-gray-600">e-mail</p>
+                <input type="email" name="email" class="bg-white border border-[#FDC435] rounded-2xl px-2 py-1 focus:outline-none max-w-[400px] text-black shadow-lg">
+                <p class="font-nunito text-gray-600">message</p>
+                <textarea name="message" class="bg-white max-w-108 h-40 text-left align-top p-2 border border-[#FDC435] rounded-2xl resize-none focus:outline-none shadow-lg"></textarea>
+                <button type="submit" class="w-28 mt-5 bg-[#FDC435] text-center self-center mb-4 font-bold text-black px-4 py-2 rounded-2xl transition-colors hover:bg-gray-200">
+                  Submit
+                </button>
+              </div>
+              
+            </form>
+          
+
         </div>
       </div>
     </section>
